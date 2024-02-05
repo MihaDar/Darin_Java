@@ -5,9 +5,13 @@ public class Task1 {
 
         Scanner input = new Scanner(System.in);
         System.out.print("Введите число - ");
-        int number = input.nextInt();
+        try {
+        double number = Double.parseDouble(input.next());
         if (number > 7){
             System.out.print("Привет");
+        }
+        } catch (Exception exception) {
+            System.out.println("Ошибка! Нужно вводить только часла.");
         }
         input.close();
     }

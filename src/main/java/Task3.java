@@ -3,8 +3,7 @@ public class Task3 {
 
         double[] digits = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 9.9};
 
-        for (int i = 0; i < digits.length; i++) {
-            double digit = digits[i];
+        for (double digit: digits) {
             if (digit % 3 == 0 && digit != 0) {
                 System.out.println(digit);
             }
